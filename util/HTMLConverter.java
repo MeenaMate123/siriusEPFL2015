@@ -28,7 +28,7 @@ public class HTMLConverter {
 	 * @param s a string
 	 * @return <code>true</code> iff the string is a URL
 	 */
-	public static boolean isUrl(String s) {
+	public static boolean isUrl(String s) throws Exception {
 		try {
 			new URL(s);
 		} catch (MalformedURLException e) {
